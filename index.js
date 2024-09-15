@@ -4,8 +4,11 @@ const app = express();
 const port = 3000;
 
 // Define a simple Hello World API
-app.get('/api/hello', (req, res) => {
+app.get('/', (req, res) => {
   res.send('Hello World!');
+});
+app.get('/api/hello', (req, res) => {
+  res.send('Hello World! from hello');
 });
 
 // Start the server
